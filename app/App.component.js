@@ -14,11 +14,9 @@ export default class App extends Component {
   _goToTaeProfiles = () => {
     this.props.navigation.navigate('Tae');
   }
-
   _goToJoeProfiles = () => {
     this.props.navigation.navigate('Joe');
   }
-
   _goToBenProfiles = () => {
     this.props.navigation.navigate('Ben');
   }
@@ -27,6 +25,10 @@ export default class App extends Component {
     this.props.navigation.navigate('M');
   }
   
+  _goToNuProfiles = () => {
+    this.props.navigation.navigate('Nu');
+  }
+
   render () {
     return (
       <View style={styles.container}>
@@ -35,6 +37,7 @@ export default class App extends Component {
         <Button onPress={this._goToJoeProfiles} title="Go to Joe's Profile" />
         <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
         <Button onPress={this._goToMProfiles} title="Go to M's Profile" />
+        <Button onPress={this._goToNuProfiles} title='Go to Nu Profile' />
       </View>
     );
   }

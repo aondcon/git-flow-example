@@ -4,6 +4,7 @@ import App from '../App.component';
 import Ben from '../pages/Ben/Ben.page';
 import Tae from '../pages/Tae/Tae.page';
 import M from '../pages/M/M.page';
+import Nu from '../pages/Nu/Nu.page';
 
 import {StackNavigator} from 'react-navigation';
 const Router = StackNavigator({
@@ -41,6 +42,12 @@ const Router = StackNavigator({
     navigationOptions: ({navigation}) => ({
       title: `M's Profiles`
     })
+  },
+  Nu: {
+    screen: Nu,
+    navigationOptions: ({navigation}) => ({
+      title: `Nu\'s Profiles`,
+    }),
   }
 });
 
