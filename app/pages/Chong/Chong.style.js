@@ -9,16 +9,21 @@ const stylesObj = {
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
   },
+  avatar: {
+    width: 100,
+    height: 100
+  },
   welcome: {
-    fontSize: 20,
+    fontSize: 16,
     textAlign: 'center',
-    margin: 10,
+    padding: 10,
     color: 'blue'
   },
-  instructions: {
+  fullname: {
+    fontSize: 20,
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
+    padding: 10,
+    color: 'black'
   }
 };
 
