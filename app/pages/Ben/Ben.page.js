@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import styles from './Ben.style';
-import {Image, Text, View} from 'react-native';
+import {Button, Image, Text, View} from 'react-native';
 
 export default class Ben extends Component {
+  _backPage = () => this.props.navigation.goBack()
   render () {
     return (
       <View style={styles.container}>
@@ -11,8 +13,12 @@ export default class Ben extends Component {
         <Text style={styles.name}>Name : Benjapol Suksakulchai</Text>
         <Text style={styles.tel}>Tel : 0918168000</Text>
         <Text style={styles.email}>Email : Benjapol_Suk@truecorp.co.th</Text>
+        <Button onPress={this._backPage} title='Back' />
       </View>
     );
   }
 }
+Ben.propTypes = {
+  navigation: PropTypes.object
+};
 
