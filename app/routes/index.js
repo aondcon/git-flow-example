@@ -40,7 +40,7 @@ const Router = StackNavigator({
   Nu: {
     screen: Nu,
     navigationOptions: ({navigation}) => ({
-      title: `Nu Profiles`,
+      title: `Nu\'s Profiles`,
     }),
   }
 });
