@@ -1,9 +1,9 @@
 
 import ProptTypes from 'prop-types';
 import React, {Component} from 'react';
+import styles from './App.style';
 import {
   Button,
-  StyleSheet,
   View
 } from 'react-native';
 
@@ -20,6 +20,11 @@ export default class App extends Component {
   _goToBenProfiles = () => {
     this.props.navigation.navigate('Ben');
   }
+
+  _goToMProfiles = () => {
+    this.props.navigation.navigate('M');
+  }
+  
   _goToNuProfiles = () => {
     this.props.navigation.navigate('Nu');
   }
@@ -31,35 +36,17 @@ export default class App extends Component {
         <Button onPress={this._goToTaeProfiles} title="Go to Tae's Profile" />
         <Button onPress={this._goToJoeProfiles} title="Go to Joe's Profile" />
         <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
+        <Button onPress={this._goToMProfiles} title="Go to M's Profile" />
         <Button onPress={this._goToNuProfiles} title='Go to Nu Profile' />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-});
- 
 App.propTypes = {
   navigation: ProptTypes.object
 };
-  
+
 App.defaultProps = {
   navigation: {}
 };
