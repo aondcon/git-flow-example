@@ -10,10 +10,15 @@ export default class App extends Component {
     this.props.navigation.navigate('Aon');
   }
 
+  _goToNuProfiles = () => {
+    this.props.navigation.navigate('Nu');
+  }
+
   render () {
     return (
       <View style={styles.container}>
         <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
+        <Button onPress={this._goToNuProfiles} title="Go to Nu Profile" />
       </View>
     );
   }
