@@ -1,23 +1,16 @@
-import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {
-  Button,
   StyleSheet,
+  Text,
   View
 } from 'react-native';
 
-export default class App extends Component {
-  _goToAonProfiles = () => {
-    this.props.navigation.navigate('Aon');
-  }
-  _goToBenProfiles = () => {
-    this.props.navigation.navigate('Ben');
-  }
+export default class Ben extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
-        <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
+        <Text style={styles.welcome}>Hello My Name Is Ben!</Text>
+        <Text style={styles.welcome}>Benjapol Suksakulchai</Text>
       </View>
     );
   }
@@ -41,7 +34,3 @@ const styles = StyleSheet.create({
     marginBottom: 5
   }
 });
- 
-App.propTypes = {
-  navigation: PropTypes.object
-};
