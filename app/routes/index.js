@@ -1,13 +1,11 @@
 import Aon from '../pages/Aon/Aon.page';
-import Joe from '../pages/Joe/Joe.page';
-import Aon from '../pages/Aon/Aon.page';
 import App from '../App.component';
 import Ben from '../pages/Ben/Ben.page';
-import Tae from '../pages/Tae/Tae.page';
+import Joe from '../pages/Joe/Joe.page';
 import M from '../pages/M/M.page';
 import Nu from '../pages/Nu/Nu.page';
+import Tae from '../pages/Tae/Tae.page';
 
-import {StackNavigator} from 'react-navigation';
 import Wiwat from '../pages/Wat/Wat.page';
 import {StackNavigator} from 'react-navigation';
   
@@ -21,14 +19,14 @@ const Router = StackNavigator({
   Aon: {
     screen: Aon,
     navigationOptions: ({navigation}) => ({
-      title: `Aon's Profiles`,
-    }),
+      title: 'Aon\'s Profiles'
+    })
   },
   Joe: {
     screen: Joe,
     navigationOptions: ({navigation}) => ({
-      title: `Joe's Profiles`,
-    }),
+      title: 'Joe\'s Profiles'
+    })
   },
   Tae: {
     screen: Tae,
@@ -44,16 +42,16 @@ const Router = StackNavigator({
   M: {
     screen: M,
     navigationOptions: ({navigation}) => ({
-      title: `M's Profiles`
+      title: 'M\'s Profiles'
     })
   },
   Nu: {
     screen: Nu,
     navigationOptions: ({navigation}) => ({
-      title: `Nu\'s Profiles`,
-    }),
+      title: 'Nu\'s Profiles'
+    })/* ,
       title: 'Aon\'s Profiles'
-    })
+    })*/
   },
   Wat: {
     screen: Wiwat,
