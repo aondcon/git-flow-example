@@ -2,6 +2,8 @@ import Aon from '../pages/Aon/Aon.page';
 import Joe from '../pages/Joe/Joe.page';
 import App from '../App.component';
 import Ben from '../pages/Ben/Ben.page';
+import Tae from '../pages/Tae/Tae.page';
+  
 import {StackNavigator} from 'react-navigation';
 const Router = StackNavigator({
   Main: {
@@ -22,6 +24,12 @@ const Router = StackNavigator({
       title: `Joe's Profiles`,
     }),
   },
+
+  Tae: {
+    screen: Tae,
+    navigationOptions: ({navigation}) => ({
+      title: 'Tae\'s Profiles'
+    })},
   Ben: {
     screen: Ben,
     navigationOptions: ({navigation}) => ({
