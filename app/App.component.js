@@ -26,6 +26,9 @@ export default class App extends Component {
   _goToWatProfiles = () => {
     this.props.navigation.navigate('Wat');
   }
+  _goToRungProfiles = () => {
+    this.props.navigation.navigate('Rung');
+  }
 
   _goToMProfiles = () => {
     this.props.navigation.navigate('M');
@@ -50,6 +53,7 @@ export default class App extends Component {
         <Button onPress={this._goToNuProfiles} title='Go to Nu Profile' />
         <Button onPress={this._goToWatProfiles} title="Go to Wat's Profile" />
         <Button onPress={this._goToChongProfiles} title="Go to Chong's Profile" />
+        <Button onPress={this._goToRungProfiles} title="Go to Rung's Profile" />
       </View>
     );
   }
