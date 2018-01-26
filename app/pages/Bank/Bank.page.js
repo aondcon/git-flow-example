@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import {
+  Image,
   Platform,
   StyleSheet,
   Text,
   View
 } from 'react-native';
 
-export default class App extends Component {
+export default class Bank extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Hello I'm Aon!</Text>
-        <Text style={styles.welcome}>Jakkrit Chinvoraratanakanok</Text>
+        <Image
+          source={require('../../../avatar.png')}
+        />
+        <Text style={styles.welcome}>Hello I'm Bank!</Text>
+        <Text style={styles.welcome}>Chaowalit Kongkham</Text>
       </View>
     );
   }
