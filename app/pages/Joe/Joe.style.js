@@ -19,8 +19,6 @@ export default StyleSheet.create({
   },
   img: {
     justifyContent: 'center',
-    alignItems: 'center',
-    width: '90%',
-    height: '70%'
+    alignItems: 'center'
   }
 });
