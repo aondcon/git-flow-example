@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 
 export default class App extends Component {
+  goBack = () => {
+    this.props.navigation.goBack();
+  };
   render () {
-    goBack = () => {
-      this.props.navigation.goBack();
-    };
     return (
       <View style={styles.container}>
         <View style={styles.img}>
