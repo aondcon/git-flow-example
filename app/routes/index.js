@@ -7,8 +7,9 @@ import M from '../pages/M/M.page';
 import Nu from '../pages/Nu/Nu.page';
 import Tae from '../pages/Tae/Tae.page';
 
+import Wiwat from '../pages/Wat/Wat.page';
 import {StackNavigator} from 'react-navigation';
-
+  
 const Router = StackNavigator({
   Main: {
     screen: App,
@@ -55,6 +56,12 @@ const Router = StackNavigator({
     screen: Bank,
     navigationOptions: ({navigation}) => ({
       title: 'Bank\'s Profiles'
+    })
+  },
+  Wat: {
+    screen: Wiwat,
+    navigationOptions: ({navigation}) => ({
+      title: 'Wiwat\'s Profiles'
     })
   }
 });
