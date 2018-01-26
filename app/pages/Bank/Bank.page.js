@@ -1,23 +1,21 @@
 import React, {Component} from 'react';
 import {
-  Button,
+  Image,
+  Platform,
   StyleSheet,
+  Text,
   View
 } from 'react-native';
 
-export default class App extends Component {
-  _goToAonProfiles = () => {
-    this.props.navigation.navigate('Aon');
-  }
-  _goToBankProfiles = () => {
-    this.props.navigation.navigate('Bank');
-  }
-
+export default class Bank extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
-        <Button onPress={this._goToBankProfiles} title="Go to Bank's Profile" />
+        <Image
+          source={require('../../../avatar.png')}
+        />
+        <Text style={styles.welcome}>Hello I'm Bank!</Text>
+        <Text style={styles.welcome}>Chaowalit Kongkham</Text>
       </View>
     );
   }
@@ -41,4 +39,3 @@ const styles = StyleSheet.create({
     marginBottom: 5
   }
 });
- 
