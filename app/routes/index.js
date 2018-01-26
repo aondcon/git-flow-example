@@ -3,7 +3,8 @@ import Joe from '../pages/Joe/Joe.page';
 import App from '../App.component';
 import Ben from '../pages/Ben/Ben.page';
 import Tae from '../pages/Tae/Tae.page';
-  
+import M from '../pages/M/M.page';
+
 import {StackNavigator} from 'react-navigation';
 const Router = StackNavigator({
   Main: {
@@ -24,7 +25,6 @@ const Router = StackNavigator({
       title: `Joe's Profiles`,
     }),
   },
-
   Tae: {
     screen: Tae,
     navigationOptions: ({navigation}) => ({
@@ -34,6 +34,12 @@ const Router = StackNavigator({
     screen: Ben,
     navigationOptions: ({navigation}) => ({
       title: 'Ben\'s Profiles'
+    })
+  },
+  M: {
+    screen: M,
+    navigationOptions: ({navigation}) => ({
+      title: `M's Profiles`
     })
   }
 });
