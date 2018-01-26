@@ -1,5 +1,6 @@
 import Aon from '../pages/Aon/Aon.page';
 import Joe from '../pages/Joe/Joe.page';
+import Aon from '../pages/Aon/Aon.page';
 import App from '../App.component';
 import Ben from '../pages/Ben/Ben.page';
 import Tae from '../pages/Tae/Tae.page';
@@ -7,6 +8,9 @@ import M from '../pages/M/M.page';
 import Nu from '../pages/Nu/Nu.page';
 
 import {StackNavigator} from 'react-navigation';
+import Wiwat from '../pages/Wat/Wat.page';
+import {StackNavigator} from 'react-navigation';
+  
 const Router = StackNavigator({
   Main: {
     screen: App,
@@ -48,6 +52,14 @@ const Router = StackNavigator({
     navigationOptions: ({navigation}) => ({
       title: `Nu\'s Profiles`,
     }),
+      title: 'Aon\'s Profiles'
+    })
+  },
+  Wat: {
+    screen: Wiwat,
+    navigationOptions: ({navigation}) => ({
+      title: 'Wiwat\'s Profiles'
+    })
   }
 });
 
