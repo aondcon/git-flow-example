@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import {
   Button,
@@ -9,16 +10,19 @@ export default class App extends Component {
   _goToAonProfiles = () => {
     this.props.navigation.navigate('Aon');
   }
-
   _goToTaeProfiles = () => {
     this.props.navigation.navigate('Tae');
   }
 
+  _goToBenProfiles = () => {
+    this.props.navigation.navigate('Ben');
+  }
   render () {
     return (
       <View style={styles.container}>
         <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
         <Button onPress={this._goToTaeProfiles} title="Go to Tae's Profile" />
+        <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
       </View>
     );
   }
@@ -43,3 +47,6 @@ const styles = StyleSheet.create({
   }
 });
  
+App.propTypes = {
+  navigation: PropTypes.object
+};
