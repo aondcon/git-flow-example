@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import styles from './Joe.style';
 import {
   Image,
-  StyleSheet,
   Text,
   View
 } from 'react-native';
@@ -18,28 +18,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  },
-  img: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '90%',
-    height: '70%'
-  }
-});
