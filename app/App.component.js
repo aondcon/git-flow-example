@@ -9,11 +9,15 @@ export default class App extends Component {
   _goToAonProfiles = () => {
     this.props.navigation.navigate('Aon');
   }
+  _goToRungProfiles = () => {
+    this.props.navigation.navigate('Rung');
+  }
 
   render () {
     return (
       <View style={styles.container}>
         <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
+        <Button onPress={this._goToRungProfiles} title="Go to Rung's Profile" />
       </View>
     );
   }
