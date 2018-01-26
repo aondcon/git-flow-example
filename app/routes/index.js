@@ -50,6 +50,7 @@ const Router = StackNavigator({
     screen: Nu,
     navigationOptions: ({navigation}) => ({
       title: 'Nu\'s Profiles'
+<<<<<<< HEAD
     })
   },
   Bank: {
@@ -57,6 +58,11 @@ const Router = StackNavigator({
     navigationOptions: ({navigation}) => ({
       title: 'Bank\'s Profiles'
     })
+=======
+    })/* ,
+      title: 'Aon\'s Profiles'
+    })*/
+>>>>>>> 771da48ecc206678a86166e3eb88f252fd52d9dd
   },
   Wat: {
     screen: Wiwat,
