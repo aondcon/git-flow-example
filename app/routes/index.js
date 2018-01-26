@@ -1,5 +1,6 @@
 import Aon from '../pages/Aon/Aon.page';
 import App from '../App.component';
+import Bank from '../pages/Bank/Bank.page';
 import Ben from '../pages/Ben/Ben.page';
 import Joe from '../pages/Joe/Joe.page';
 import M from '../pages/M/M.page';
@@ -50,9 +51,13 @@ const Router = StackNavigator({
     screen: Nu,
     navigationOptions: ({navigation}) => ({
       title: 'Nu\'s Profiles'
-    })/* ,
-      title: 'Aon\'s Profiles'
-    })*/
+    })
+  },
+  Bank: {
+    screen: Bank,
+    navigationOptions: ({navigation}) => ({
+      title: 'Bank\'s Profiles'
+    })
   },
   Wat: {
     screen: Wiwat,

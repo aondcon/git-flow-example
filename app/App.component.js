@@ -11,6 +11,9 @@ export default class App extends Component {
   _goToAonProfiles = () => {
     this.props.navigation.navigate('Aon');
   }
+  _goToBankProfiles = () => {
+    this.props.navigation.navigate('Bank');
+  }
   _goToTaeProfiles = () => {
     this.props.navigation.navigate('Tae');
   }
@@ -39,6 +42,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Button onPress={this._goToAonProfiles} title="Go to Aon's Profile" />
+        <Button onPress={this._goToBankProfiles} title="Go to Bank's Profile" />
         <Button onPress={this._goToTaeProfiles} title="Go to Tae's Profile" />
         <Button onPress={this._goToJoeProfiles} title="Go to Joe's Profile" />
         <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
