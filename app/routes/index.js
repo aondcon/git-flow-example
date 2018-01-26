@@ -7,6 +7,7 @@ import Nu from '../pages/Nu/Nu.page';
 import Tae from '../pages/Tae/Tae.page';
 
 import Wiwat from '../pages/Wat/Wat.page';
+import Chong from '../pages/Chong/Chong.page';
 import {StackNavigator} from 'react-navigation';
   
 const Router = StackNavigator({
@@ -58,6 +59,12 @@ const Router = StackNavigator({
     navigationOptions: ({navigation}) => ({
       title: 'Wiwat\'s Profiles'
     })
+  },
+  Chong: {
+    screen: Chong,
+    navigationOptions: {
+      title: 'Chong\'s Profiles'
+    }
   }
 });
 
