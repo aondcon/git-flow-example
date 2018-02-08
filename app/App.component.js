@@ -55,7 +55,7 @@ export default class App extends Component {
         <Button onPress={this._goToWatProfiles} title="Go to Wat's Profile" />
         <Button onPress={this._goToChongProfiles} title="Go to Chong's Profile" />
         <Button onPress={this._goToRungProfiles} title="Go to Rung's Profile" />
-        <Text>Made by Hybrid team</Text>
+        <Text>Made by Hybrid TEAM!!!  </Text>
       </View>
     );
   }
