@@ -1,4 +1,5 @@
 
+import firebase from 'react-native-firebase';
 import ProptTypes from 'prop-types';
 import React, {Component} from 'react';
 import styles from './App.style';
@@ -10,7 +11,9 @@ import {
 
 export default class App extends Component {
   _goToAonProfiles = () => {
-    this.props.navigation.navigate('Aon');
+    // this.props.navigation.navigate('Aon');
+    const FCM = firebase.messaging();
+    FCM.requestPermissions();
   }
   _goToBankProfiles = () => {
     this.props.navigation.navigate('Bank');
