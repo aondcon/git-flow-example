@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>557184291787-q24ta8m048btub503qqv14fsudnnu4gb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.557184291787-q24ta8m048btub503qqv14fsudnnu4gb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQPesyIMKDqbFuSes1Loy2UELjxEfHTgU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>557184291787</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.truecorp.jenkins.gitflow</string>
+	<key>PROJECT_ID</key>
+	<string>gitflow-90622</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gitflow-90622.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:557184291787:ios:16f9fb12b2353ac1</string>
+	<key>DATABASE_URL</key>
+	<string>https://gitflow-90622.firebaseio.com</string>
+</dict>
+</plist>
