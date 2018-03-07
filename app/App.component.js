@@ -12,6 +12,8 @@ import {
 export default class App extends Component {
   _goToAonProfiles = () => {
     // this.props.navigation.navigate('Aon');
+
+    console.log('request firebase notification');
     const FCM = firebase.messaging();
     FCM.requestPermissions();
   }
@@ -52,13 +54,7 @@ export default class App extends Component {
         <Button onPress={this._goToBankProfiles} title="Go to Bank's Profile" />
         <Button onPress={this._goToTaeProfiles} title="Go to Tae's Profile" />
         <Button onPress={this._goToJoeProfiles} title="Go to Joe's Profile" />
-        <Button onPress={this._goToBenProfiles} title="Go to Ben's Profile" />
-        <Button onPress={this._goToMProfiles} title="Go to M's Profile" />
-        <Button onPress={this._goToNuProfiles} title='Go to Nu Profile' />
-        <Button onPress={this._goToWatProfiles} title="Go to Wat's Profile" />
-        <Button onPress={this._goToChongProfiles} title="Go to Chong's Profile" />
-        <Button onPress={this._goToRungProfiles} title="Go to Rung's Profile" />
-        <Text>Made by Hybrid TEAM!!!</Text>
+        <Text>Made by Hybrid TEAM!!! test eiei</Text>
       </View>
     );
   }
